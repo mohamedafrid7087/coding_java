@@ -5,7 +5,7 @@ public class DivOfTwoNumber {
         return c;
     }
     public static void main (String[] args){
-        DivOfTwoNumber DivOfTwoNumber = new DivOfTwoNumber();
-        System.out.println(DivOfTwoNumber.div(8989934, 56));
+        DivOfTwoNumber divOfTwoNumber = new DivOfTwoNumber();
+        System.out.println(divOfTwoNumber.div(8989934, 56));
     }
         }
