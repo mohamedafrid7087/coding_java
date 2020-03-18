@@ -22,7 +22,7 @@ class Rahman extends ThemeMusic {
 
     class BackGroundMusic {
         public static void main(String[] args) {
-            ThemeMusic obj1 = new Rahman();
+            Rahman obj1 = new Rahman();
             obj1.play();
             Aniruth obj2 = new Aniruth();
             obj2.play();
