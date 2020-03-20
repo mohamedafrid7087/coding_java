@@ -7,7 +7,7 @@ public class AddTwoNumber {
 
     public static void main(String[] args) {
         AddTwoNumber addTwoNumber = new AddTwoNumber();
-        System.out.println(addTwoNumber.sum(2000, 7000));
+        System.out.println(addTwoNumber.sum(1000, 2000));
     }
 
 }
