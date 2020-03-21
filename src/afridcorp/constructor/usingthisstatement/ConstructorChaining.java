@@ -42,10 +42,10 @@ public class ConstructorChaining {
         System.out.println(obj3.age);
         System.out.println(obj3.location);
 
-        ConstructorChaining obj4 = new ConstructorChaining("mohamed afrid",22,"Chennai");
-        System.out.println("...............three parameterized constructor................");
-        System.out.println(obj4.name);
-        System.out.println(obj4.age);
-        System.out.println(obj4.location);
+//        ConstructorChaining obj4 = new ConstructorChaining("mohamed afrid",22,"Chennai");
+//        System.out.println("...............three parameterized constructor................");
+//        System.out.println(obj4.name);
+//        System.out.println(obj4.age);
+//        System.out.println(obj4.location);
     }
 }
