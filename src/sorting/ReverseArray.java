@@ -1,4 +1,4 @@
-package coding.problems;
+package sorting;
 
 import org.w3c.dom.ls.LSOutput;
 
