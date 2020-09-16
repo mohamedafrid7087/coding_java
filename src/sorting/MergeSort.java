@@ -2,72 +2,76 @@ package sorting;
 
 public class MergeSort {
 
-    public static void main(String[] args) {
+    public void mergeSort(int[] arr, int l, int m, int r){
 
-        int arr[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-        MergeSort obj = new MergeSort();
-        System.out.println("before sorting ");
-        obj.print(arr);
-        System.out.println();
-        obj.sort(arr, 0, arr.length - 1);
-        System.out.println("after sorting");
-        obj.print(arr);
-    }
+        int n1 = m - l+1;
+        int n2 = r-m;
 
-    void merge(int[] arr, int l, int m, int r) {
-        int n1 = m - l + 1;
-        int n2 = r - m;
+        int Left [] = new int [n1];
+        int Right [] = new int[n2];
 
-        int L[] = new int[n1];
-        int R[] = new int[n2];
-
-        for (int i = 0; i < n1; ++i) {
-            L[i] = arr[l + i];
-
-            for (int j = 0; j < n2; ++j) {
-                R[j] = arr[m + 1 + j];
+        for(int i=0; i<n1; ++i){
+            Left[i] = arr[l + i];
+            for(int j = 0; j<n2; ++j){
+                Right [j] = arr[m + 1 + j];
             }
         }
-
-        int i = 0;
-        int j = 0;
-        int k = l;
-        while (i < n1 && j < n2) {
-            if (L[i] <= R[j]) {
-                arr[k] = L[i];
+        int i= 0;
+        int j=0;
+        int k =l;
+        while(i<n1 && j<n2) {
+            if (Left[i] <= Right[j]) {
+                arr[k] = Left[i];
                 i++;
             } else {
-                arr[k] = R[j];
+                arr[k] = Right[j];
                 j++;
             }
             k++;
         }
 
-        while (i < n1) {
-            arr[k] = L[i];
-            i++;
-            k++;
-        }
-        while (j < n2) {
-            arr[k] = R[j];
-            j++;
-            k++;
-        }
+            while(i<n1){
+                arr[k] = Left[i];
+                i++;
+                k++;
+            }
+            while(j<n2){
+                arr[k] = Right[j];
+                j++;
+                k++;
+            }
+
     }
 
-    void sort(int[] arr, int l, int r) {
-        if (l < r) {
+    public void mergeSortReccursion(int [] arr, int l, int r){
+        if(l<r) {
             int m = (l + r) / 2;
-            sort(arr, l, m);
-            sort(arr, m + 1, r);
-            merge(arr, l, m, r);
+            mergeSortReccursion(arr, l,m);
+            mergeSortReccursion(arr,m+1,r);
+            mergeSort(arr,l,m,r);
         }
     }
 
-    void print(int[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n; ++i)
+        public static void printArray(int[] arr){
+        for(int i : arr){
+            System.out.print(i + " ");
+        }
+        }
+
+
+    public static void main(String[] args) {
+
+        int arr[] = {100000, 21212, 3333333, 44444, 5232, 623, 734, 866, 99};
+        MergeSort obj = new MergeSort();
+        int leng = arr.length;
+        System.out.println("before sorting : ");
+        for(int i=0; i<leng; i++) {
             System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+        obj.mergeSortReccursion(arr,0,arr.length-1);
+        System.out.println("after sorting");
+        printArray(arr);
 
     }
 }
