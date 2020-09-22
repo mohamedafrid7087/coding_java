@@ -29,6 +29,6 @@ public static void main(String[] args) {
     } else if (jasonAmount>=2000){
         finalAmount = jasonAmount - 0.19*jasonAmount;
     }
-    System.out.println("the final amount jason has to pay : = " + finalAmount);
+    System.out.println("the final amount jason has to pay  = " + finalAmount);
     }
 }
