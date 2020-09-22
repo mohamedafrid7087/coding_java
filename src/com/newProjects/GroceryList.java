@@ -4,7 +4,7 @@ package com.newProjects;
 import java.util.ArrayList;
 
 public class GroceryList {
-    private ArrayList<String> groceryList = new ArrayList<String>();
+    private ArrayList<String> groceryList = new ArrayList<String>(); // string initilizing through grocery list.
 
     public void addGroceryItem(String item) {
 
