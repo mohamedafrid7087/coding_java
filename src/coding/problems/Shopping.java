@@ -6,6 +6,10 @@ public class Shopping {
 //The shop is running a discount sale of 10% off for purchasing upto $1000.
 //And 19% off for purchases above $2000.
 //Write a program to show the discount amount and the final amount that Jason has to pay.
+
+    public double discount(double totalAmount){
+
+    }
 public static void main(String[] args) {
 
     int jasonAmount = 2500;
