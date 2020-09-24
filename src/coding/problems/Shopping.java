@@ -7,32 +7,25 @@ public class Shopping {
 //And 19% off for purchases above $2000.
 //Write a program to show the discount amount and the final amount that Jason has to pay.
 
-    public double discount(double totalAmount){
-
+    public double getDiscount(double totalAmount){
+        double value = 0 ;
+        if(totalAmount <= 1000 ){
+            value = 0.1*totalAmount;
+        }else if(totalAmount>=2000){
+            value = 0.19*totalAmount;
+        }
+            return value;
     }
+
+
 public static void main(String[] args) {
 
-    int jasonAmount = 2500;
-    double finalAmount =0 ;
+        Shopping shopping = new Shopping();
+        double totalAmount = 2000;
+        double discount = shopping.getDiscount(totalAmount);
+        double finalAmount = totalAmount- discount;
+        System.out.println("final amount to be paid = " +finalAmount);
+        System.out.println("discount price availed for purchase is = " +discount);
 
-    double ifPurchasing = 1000;
-    double ifshopping = 2000;
-
-    if(ifPurchasing <=1000){
-        finalAmount = ifPurchasing - 0.1*ifPurchasing;
-    }
-    System.out.println("discount price for purchasing upto 1000 = " + finalAmount);
-
-    if(ifshopping <= 2000){
-        finalAmount = ifshopping - 0.19*ifshopping;
-    }
-    System.out.println("discount price for purchasing upto 2000 = " + finalAmount);
-
-    if(jasonAmount <= 1000){
-        finalAmount = jasonAmount - 0.1*jasonAmount;
-    } else if (jasonAmount>=2000){
-        finalAmount = jasonAmount - 0.19*jasonAmount;
-    }
-    System.out.println("the final amount jason has to pay  = " + finalAmount);
     }
 }
