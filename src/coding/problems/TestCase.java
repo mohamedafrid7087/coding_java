@@ -20,6 +20,7 @@ public class TestCase {
             else
                 break;
         }
+
         return array;
     }
 
