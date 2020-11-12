@@ -5,14 +5,14 @@ import java.util.Arrays;
 class SecondLargestElement {
 
     int getSecondLargest(int[] array) {
-        int largest = 0;
+        int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
         for (int i = 0; i < array.length; i++) {
             if (largest < array[i]) {
                 secondLargest = largest;
                 largest = array[i];
             } else {
-                if (secondLargest < largest && secondLargest < array[i]) {
+                if (secondLargest < largest && array[i] != largest) {
                     secondLargest = array[i];
                 }
             }
