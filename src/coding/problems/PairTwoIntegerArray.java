@@ -27,7 +27,7 @@ public class PairTwoIntegerArray {
 
         PairTwoIntegerArray pairTwoIntegerArray = new PairTwoIntegerArray();
 
-        pairTwoIntegerArray.pairValue(new int[] {2, 7, 4, -5, 11, 5, 20}, 15);
+        pairTwoIntegerArray.pairValue(new int[] {2, 7, 4, -5, 11, 5, 20}, 13);
         pairTwoIntegerArray.pairValue(new int[] {14, -15, 9, 16, 25, 45, 12, 8}, 30);
 
     }

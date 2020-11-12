@@ -10,7 +10,6 @@ import java.util.Scanner;
  */
 public class FindArrayElement {
 
-    private Scanner scanner = new Scanner(System.in);
 
     public boolean findElement(int[] array, int element) {
         for (int i = 0; i < array.length; i++) {
@@ -27,7 +26,7 @@ public class FindArrayElement {
 
     public static void main(String[] args) {
         FindArrayElement problemsArray = new FindArrayElement();
-        Scanner scanner = new Scanner(System.in);
+         Scanner scanner = new Scanner(System.in);
         int[] array = {1, 2, 3, 4, 5};
         System.out.print("press to find element in array");
         int input ;

@@ -13,7 +13,7 @@ class SecondLargest {
                 largest = array[i];
             } else {
                 if(secondLargest < largest && secondLargest < array[i]){
-                    secondLargest = array[i+1];
+                    secondLargest = array[i];
                 }
             }
         }

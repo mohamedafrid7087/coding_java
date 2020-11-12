@@ -15,7 +15,8 @@ public class PopulatesArray {
                 if (location % 2 != 0) {
                     newArray[location] = array[location];
                     System.out.println("odd location :" + location);
-                } else {
+                }
+                else {
                     newArray[location] = array[location];
                 }
             } else {

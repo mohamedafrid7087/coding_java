@@ -1,5 +1,10 @@
 package coding.problems;
 
+/**1 requriement
+ * 2 input and output
+ *
+ *
+ */
 public class TestCase {
 
     public int[] createsAndPopulatesArray(int[] array) {
@@ -25,7 +30,7 @@ public class TestCase {
     }
 
     public static void main(String[] args) {
-        int [] input = {0, 5, 7, 8, 9, 10};
+        int [] input = {2, 3, 4, 5, 6};
         TestCase populatesArray = new TestCase();
         int [] result = populatesArray.createsAndPopulatesArray(input);
         System.out.print("output : ");
